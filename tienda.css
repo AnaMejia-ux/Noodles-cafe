@@ -1,0 +1,22 @@
+/* Estilos para login.html y producto.html. Se carga al final para complementar tus archivos. */
+.login-page{min-height:60vh;display:grid;place-items:center;padding:3rem 1rem}
+.login-box{width:100%;max-width:400px;padding:2rem;border:1px solid rgba(128,128,128,.35);border-radius:10px}
+.login-box h1{margin:0 0 .25rem}
+.login-box p{margin:0 0 1rem}
+.login-box label{display:block;margin:1rem 0 .35rem;font-weight:600}
+.login-box input{width:100%;padding:.7rem;border:1px solid rgba(128,128,128,.6);border-radius:6px;font:inherit;background:transparent;color:inherit}
+.login-box input:focus,.btn:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+.login-box .btn{width:100%;margin-top:1.25rem;cursor:pointer}
+.form-error{color:#b3261e;min-height:1.4em;margin:.75rem 0 0;font-size:.9rem}
+
+.producto-page{padding:3rem 1rem}
+.producto{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.producto img{width:100%;height:auto;border-radius:10px}
+.producto h1{margin:0 0 .25rem}
+.producto .price{font-size:1.6rem;font-weight:700;margin:1rem 0}
+.producto h2{font-size:1.1rem;margin:1.5rem 0 .5rem}
+.caracteristicas{padding-left:1.2rem;margin:0 0 1.5rem}
+.caracteristicas li{margin:.4rem 0}
+.producto .btn{cursor:pointer}
+.aviso{min-height:1.4em;margin-top:.75rem;font-weight:600}
+@media (max-width:720px){.producto{grid-template-columns:1fr;gap:1.5rem}}
