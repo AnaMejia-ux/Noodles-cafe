@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noodles Café | Iniciar sesión</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="inicio.html">Noodles Café</a>
+    <nav aria-label="Principal">
+      <a href="inicio.html#cafes">Cafés</a>
+      <a href="inicio.html#suscripcion">Suscripción</a>
+      <a href="inicio.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="login-page">
+  <div class="login-box">
+    <h1>Iniciar sesión</h1>
+    <p>Entra para ver y comprar nuestros cafés.</p>
+    <form id="loginForm" novalidate>
+      <label for="usuario">Usuario o correo electrónico</label>
+      <input id="usuario" type="text" autocomplete="username">
+
+      <label for="clave">Contraseña</label>
+      <input id="clave" type="password" autocomplete="current-password">
+
+      <p class="form-error" id="error" role="alert"></p>
+      <button class="btn" type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <p><strong>Noodles Café</strong><br>Ciudad de México</p>
+    <p>hola@noodlescafe.com<br>WhatsApp: 55 7446 3383</p>
+  </div>
+</footer>
+<script src="js/tienda.js" defer></script>
+</body>
+</html>
