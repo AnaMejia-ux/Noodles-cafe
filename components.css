@@ -1,0 +1,31 @@
+/* ===== COMPONENTES: piezas reutilizables ===== */
+
+/* Botones */
+.btn { display: inline-block; padding: 0.9rem 1.6rem; border-radius: 999px; background: var(--ink); color: var(--white); font-weight: 600; text-decoration: none; border: 2px solid var(--ink); }
+.btn:hover { background: var(--hibiscus); border-color: var(--hibiscus); }
+.btn.ghost { background: transparent; color: var(--ink); margin-left: 0.5rem; }
+.btn.ghost:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+/* Tarjetas de café */
+.coffee { border-top: 6px solid var(--saffron); padding-top: 1.25rem; }
+.coffee:nth-child(2) { border-color: var(--hibiscus); }
+.coffee:nth-child(3) { border-color: var(--ink); }
+.coffee h3 { font-size: 1.5rem; letter-spacing: -0.02em; }
+.coffee .origin { font-weight: 600; margin-bottom: 0.5rem; }
+.coffee .price { margin-top: 1rem; font-weight: 800; font-size: 1.3rem; }
+/* Botón y lista dentro de la suscripción */
+.subscribe .btn { background: var(--saffron); border-color: var(--saffron); color: var(--ink); }
+.subscribe .btn:hover { background: var(--white); border-color: var(--white); }
+.subscribe ul { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+.subscribe li { padding-left: 1.6rem; position: relative; }
+.subscribe li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--saffron); }
+/* Grano de café (hecho solo con CSS) */
+.bean { width: min(340px, 80%); aspect-ratio: 3 / 4; margin-inline: auto; background: var(--ink); border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%; position: relative; transform: rotate(18deg); box-shadow: 14px 14px 0 var(--saffron); }
+.bean::after { content: ""; position: absolute; inset: 6% 47% 6% 47%; background: var(--paper); border-radius: 999px; transform: skewX(-8deg); }
+/* Imágenes de las tarjetas */
+.coffee img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}

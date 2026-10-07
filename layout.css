@@ -1,0 +1,24 @@
+/* ===== LAYOUT: estructura de cada sección ===== */
+.wrap { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
+
+/* Encabezado */
+header { padding: 1.25rem 0; }
+header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.logo { font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+nav { display: flex; gap: 1.5rem; }
+nav a { text-decoration: none; font-weight: 600; }
+nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+/* Portada */
+.hero { padding: 3rem 0 5rem; }
+.hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
+.hero p { margin: 1.5rem 0 2rem; max-width: 46ch; font-size: 1.2rem; }
+/* Secciones generales */
+section { padding: 4.5rem 0; }
+.coffees { background: var(--white); }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+/* Suscripción */
+.subscribe .wrap { background: var(--ink); color: var(--white); border-radius: 28px; padding: clamp(2rem, 6vw, 4rem); display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
+.subscribe h2 { margin-bottom: 1rem; }
+/* Pie de página */
+footer { padding: 3rem 0 2.5rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
